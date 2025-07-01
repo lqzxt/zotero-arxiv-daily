@@ -1,7 +1,8 @@
-name: Send emails daily
+name: send
 on:
   workflow_dispatch:
-  push:
+  schedule:
+    - cron: "15 22 * * *"
 
 jobs:
   calculate-and-send:
